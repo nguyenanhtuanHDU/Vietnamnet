@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="464px" height="288px" viewBox="0 0 464 288" enable-background="new 0 0 464 288" xml:space="preserve">
+<polygon fill="#FFD33A" points="16,208 0,288 111.999,288 96,208 "/>
+<polygon fill="#FFB632" points="96,208 112,288 240,288 208,208 "/>
+<polygon fill="#FFD33A" points="128,208 112,288 224,288 208,208 "/>
+<polygon fill="#FFB632" points="208,208 224,288 352,288 320.001,208 "/>
+<polygon fill="#FFD33A" points="240,208 224,288 335.999,288 320,208 "/>
+<polygon fill="#FFB632" points="320,208 335.999,288 464,288 432,208 "/>
+<polygon fill="#FFD33A" points="168,208 56,208 72,128 152,128 "/>
+<polygon fill="#F7B030" points="152,128 264,128 296,208 168,208 "/>
+<polygon fill="#FFD33A" points="280,208 168,208 184,128 264,128 "/>
+<polygon fill="#F7B030" points="264,128 376,128 408,208 280,208 "/>
+<polygon fill="#FFD33A" points="232,128 120,128 136,48 216,48 "/>
+<polygon fill="#FFB632" points="216,48 328,48 360,128 232,128 "/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="464" height="288"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_" overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#FFD33A" d="M88,0c-5.193,10.386-13.614,18.807-24,24c10.386,5.193,18.807,13.614,24,24   c5.193-10.386,13.614-18.807,24-24C101.614,18.807,93.193,10.386,88,0"/>
+	<path clip-path="url(#SVGID_2_)" fill="#FFD33A" d="M416,40c-5.192,10.386-13.614,18.807-24,24c10.386,5.193,18.808,13.614,24,24   c5.192-10.386,13.614-18.807,24-24C429.614,58.807,421.192,50.386,416,40"/>
+	<path clip-path="url(#SVGID_2_)" fill="#FFD33A" d="M48,64c-8.655,17.31-22.69,31.345-40,40c17.31,8.655,31.345,22.69,40,40   c8.655-17.31,22.69-31.345,40-40C70.69,95.345,56.655,81.31,48,64"/>
+	<path clip-path="url(#SVGID_2_)" fill="#FFD33A" d="M368,96c-6.924,13.848-18.152,25.076-32,32c13.848,6.924,25.076,18.152,32,32   c6.924-13.848,18.152-25.076,32-32C386.152,121.076,374.924,109.848,368,96"/>
+</g>
+</svg>
