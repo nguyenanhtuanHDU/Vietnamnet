@@ -62,8 +62,6 @@
     font-size: 15px;
   }
   .search .search-inner footer .body {
-    padding: 0;
-    text-align: center;
     display: none;
   }
   .search .search-inner footer .body .body-list .item {
@@ -165,9 +163,6 @@
   }
   .header-nav {
     display: none;
-    align-items: center;
-    white-space: nowrap;
-    gap: 21px;
   }
   .header-nav li {
     position: relative;
@@ -250,6 +245,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     transition: 0.4s ease;
+    scroll-behavior: smooth;
   }
   #nav .nav-wrapper ul::-webkit-scrollbar {
     display: none;
@@ -355,10 +351,6 @@
   }
   .content-header2 > .header-main > .item > .title {
     padding: 20px;
-  }
-  .content-header2 .header-main .item .item-head ul li:nth-child(1),
-  .content-header2 .header-main .item .item-head ul li:nth-child(3) {
-    /* max-width: 60px; */
   }
   .header-news .item .item-img {
     width: 100%;

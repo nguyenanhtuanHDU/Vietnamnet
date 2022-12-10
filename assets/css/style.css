@@ -65,6 +65,7 @@ img {
 }
 .form.active {
   display: flex;
+  animation: fadeRight 0.4s ease;
 }
 .form {
   position: fixed;
@@ -418,13 +419,12 @@ header .bar {
   white-space: nowrap;
   font-weight: 700;
 }
-@keyframes fadeUp {
+@keyframes fadeRight {
   from {
-    opacity: 0;
-    transform: translateY(50px);
+    opacity: 0.2;
+    transform: translateX(-50%);
   }
 }
-
 #nav .nav-wrapper ul li .subnav {
   display: none;
   position: absolute;

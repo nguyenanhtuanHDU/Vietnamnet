@@ -110,15 +110,15 @@ const navList = document.querySelector('#nav .nav-wrapper ul')
 const navWrapper = document.querySelector('#nav .nav-wrapper')
 const navRightBtn = document.querySelector('#nav .nav-wrapper .right-btn')
 let space = 0
-let add = 50
+let add = 200
 navRightBtn.addEventListener('click', function () {
   space += add
   if (space > navList.scrollWidth - navList.offsetWidth) {
-    add = -50
+    add = -200
     this.classList.remove('fa-circle-chevron-right')
     this.classList.add('fa-circle-chevron-left')
-  } else if (space <= 0) {
-    add = 50
+  } else if (space <= -200) {
+    add = 200
     this.classList.add('fa-circle-chevron-right')
     this.classList.remove('fa-circle-chevron-left')
   }

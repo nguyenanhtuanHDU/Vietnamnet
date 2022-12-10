@@ -19,12 +19,6 @@
     background-color: rgba(0, 0, 0, 0.25);
     display: none;
   }
-  @keyframes fadeRight {
-    from {
-      opacity: 0.2;
-      transform: translateX(-50%);
-    }
-  }
   .search .search-inner {
     position: relative;
     width: 60%;
@@ -115,7 +109,7 @@
     margin-bottom: 20px;
   }
   header {
-    height: 40px;
+    height: 58px;
   }
   header .bar {
     display: block;
@@ -183,6 +177,9 @@
   .header-login {
     display: flex;
   }
+  #nav .nav-wrapper ul {
+    scroll-behavior: smooth;
+  }
   .login-title {
     color: #4d4d4d;
     font-size: 13px;
@@ -195,6 +192,7 @@
   }
   .login-icon {
     color: #ccc;
+    font-size: 22px;
   }
   .login-icon i {
     width: 20px;
