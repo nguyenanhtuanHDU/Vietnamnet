@@ -5,6 +5,101 @@
     --video-gap: 20px;
     --video-gap-number: 2;
   }
+  .search.active {
+    display: block;
+    animation: fadeRight 0.4s ease;
+  }
+  .search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: none;
+  }
+  @keyframes fadeRight {
+    from {
+      opacity: 0.2;
+      transform: translateX(-50%);
+    }
+  }
+  .search .search-inner {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    background-color: white;
+  }
+  .search .search-inner .search-head {
+    position: relative;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .search .search-inner .search-head .search-close {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    left: 20px;
+  }
+  .search .search-head .img {
+    width: 90px;
+    height: 37.25px;
+    margin: 0 auto;
+  }
+  .search .search-inner footer {
+    padding: 0 36px;
+    background-color: white;
+  }
+  .search .search-inner footer .head {
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: none;
+    padding: 0;
+    gap: 15px;
+  }
+  .search .search-inner footer .body {
+    padding: 0;
+    text-align: center;
+  }
+  .search .search-inner footer .body .body-list .item {
+    margin-right: 0;
+  }
+  .search .search-inner .other-news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px 25px;
+  }
+  .search .search-inner .other-news:first-child {
+    border-bottom: 2px solid #ccc;
+  }
+  .search .search-inner .other-news.mt--20 {
+    margin: -20px 0 0;
+  }
+  .search .search-inner .other-news button.rounded {
+    background-color: white;
+    border: 1px solid #2d67ad;
+    color: black;
+  }
+  .search .search-inner .other-news button {
+    color: white;
+    background-color: #2d67ad;
+    border-radius: 888px;
+    line-height: 30px;
+  }
+  .search .search-inner .search-input {
+    padding: 10px;
+    margin: 5px 0 -10px;
+  }
+
+  .search .search-inner .search-input input {
+    width: 100%;
+    border-radius: 888px;
+    padding: 5px 20px;
+    border: 1px solid #2a2a2a;
+    outline: none;
+  }
   .form .form-wrapper {
     position: relative;
     width: 85%;
@@ -24,7 +119,7 @@
   }
   header .bar {
     display: block;
-    font-size: 20px;
+    font-size: 28px;
   }
   #header {
     padding: 0 15px;
@@ -110,7 +205,6 @@
     display: none;
   }
   #nav {
-    width: 100%;
     height: 45px;
     border-bottom: 1px solid #e2e2e2;
     border-top: 1px solid #e2e2e2;
@@ -135,10 +229,6 @@
     display: flex;
     gap: 10px;
     overflow: scroll;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    transition: 0.4s ease;
   }
   #nav .nav-wrapper ul::-webkit-scrollbar {
     display: none;
@@ -159,6 +249,9 @@
     grid-template-columns: 1fr 1.4fr;
     padding: 0 26px;
     gap: 20px;
+  }
+  .read-comment .inner .tabs .tab-item {
+    white-space: nowrap;
   }
   .content-header.grid-3 {
     grid-template-columns: 1fr 1fr;
@@ -229,12 +322,16 @@
     display: none;
   }
   .content-body1 {
-    gap: 15px;
+    gap: 18px;
     width: calc(100% - (10px * 2));
     margin: 25px auto;
+    justify-content: space-between;
+  }
+  .content-body1 .item:last-child {
+    display: none;
   }
   .content-body1 .item-img {
-    width: 141.59px;
+    width: 100%;
     height: 94.4px;
   }
   .content-ads {

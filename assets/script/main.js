@@ -8,7 +8,6 @@ const contentItem = document.querySelectorAll(
 const contentHeading = document.querySelectorAll(
   '.read-comment .inner .tabs .tab-item h2.active'
 )
-
 const toggleViewPW = document.querySelector(
   '.form .form-wrapper .form-inner .main .email-pw .message .fa-eye'
 )
@@ -18,27 +17,46 @@ const formPW = document.querySelector(
   '.form .form-wrapper .form-inner .main .email-pw .pw'
 )
 const formClose = document.querySelector('.form-close ')
+const search = document.querySelector('.search')
+const searchInner = document.querySelector('search .search-inner')
+const searchClose = document.querySelector(
+  '.search .search-inner .search-head .search-close'
+)
+const headerBar = document.querySelector('header .bar')
 
 // handle toggle form
-const toggelForm = (type) => {
+const toggelEle = (ele, type) => {
   if (type === 'show') {
-    form.classList.add('active')
+    ele.classList.add('active')
   } else if (type === 'hide') {
-    form.classList.remove('active')
+    ele.classList.remove('active')
   }
 }
 loginBtn.forEach((item) => {
   item.addEventListener('click', function (e) {
-    toggelForm('show')
+    toggelEle(form, 'show')
   })
 })
 formClose.addEventListener('click', function () {
-  toggelForm('hide')
+  toggelEle(form, 'hide')
 })
 form.addEventListener('click', function (e) {
   if (e.target == form) {
-    toggelForm('hide')
+    toggelEle(form, 'hide')
   }
+})
+
+// handle toggle search
+headerBar.addEventListener('click', function () {
+  toggelEle(search, 'show')
+})
+search.addEventListener('click', function (e) {
+  if (e.target == search) {
+    toggelEle(search, 'hide')
+  }
+})
+searchClose.addEventListener('click', function (e) {
+  toggelEle(search, 'hide')
 })
 
 // toggle show hide password on form
@@ -95,7 +113,6 @@ let space = 0
 let add = 50
 navRightBtn.addEventListener('click', function () {
   space += add
-  console.log(space)
   if (space > navList.scrollWidth - navList.offsetWidth) {
     add = -50
     this.classList.remove('fa-circle-chevron-right')
