@@ -149,7 +149,7 @@
     color: var(--black-color);
   }
   .go-up {
-    bottom: 171px;
+    bottom: 76px;
     right: 15px;
   }
   #header {
@@ -394,7 +394,6 @@
     overflow: hidden;
   }
   .header-main .main-news .item .item-disc {
-    color: #555;
     font-size: 15px;
     line-height: 21px;
     margin-top: 10px;
@@ -434,6 +433,11 @@
   }
   .content-header2 .header-main .item .stock {
     margin: 25px 10px;
+  }
+  .content-header2 .header-main .item .stock .stock-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
   }
   .content-header2 .header-main .item .stock .stock-item .item {
     margin: 0 0 0;

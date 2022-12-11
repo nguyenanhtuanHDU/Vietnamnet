@@ -8,10 +8,9 @@
   --video-number: 4;
   --video-gap: 20px;
   --video-gap-number: 3;
-  --white-color: black;
-  --black-color: white;
-  --gray-color: black;
-  /* --gray-color: #f3f3f3; */
+  --white-color: white;
+  --black-color: black;
+  --gray-color: #f3f3f3;
 }
 html {
   scroll-behavior: smooth;
@@ -49,78 +48,76 @@ img {
   height: 38px;
   border: 1px solid #ccc;
   background-color: var(--white-color);
+  transition: 0.4s ease;
   color: var(--black-color);
+  transition: 0.4s ease;
   border-radius: 8px;
   transition: 0.5s ease;
   z-index: 100;
 }
 .go-up:hover {
   background-color: var(--black-color);
+  transition: 0.4s ease;
   color: var(--white-color);
+  transition: 0.4s ease;
 }
 .toggle {
   cursor: pointer;
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 120px;
-  height: 60px;
+  width: 97px;
+  height: 40px;
   border-radius: 50px;
   transition: 0.2s;
 }
-
 .toggle i {
   width: 50%;
-  line-height: 60px;
+  line-height: 40px;
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
   z-index: 1;
+  color: white;
 }
-
 .toggle .ball {
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   margin: 7.5px;
   border-radius: 50%;
   transition: 0.3s ease-out;
 }
-
 input {
   display: none;
 }
-
-/*
-  -- Light Mode --
-*/
-
 .light {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 125px;
+  right: 3px;
+  z-index: 100;
 }
-
 .light .toggle {
   background: linear-gradient(145deg, #e1e1e1, #fff);
 }
-
 .light .toggle .bxs-sun {
   color: #fafafa;
 }
-
 .light .toggle .bx-moon {
   color: #151d2a;
 }
-
 .light .toggle .ball {
   background: #151d2a;
+  position: absolute;
+  top: 12px;
+  right: 48px;
+  transform: translateY(-50%);
 }
 .dark {
   background: #151d2a;
 }
 .dark .toggle {
   background: #151d2a;
-  box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
+  box-shadow: 0 3px 10px white;
 }
 .dark .toggle .bx-sun {
   color: #fafafa;
@@ -131,6 +128,8 @@ input {
 .dark .toggle .ball {
   background: #fafafa;
   transform: translateX(60px);
+  top: -6px;
+  right: 61px;
 }
 .search {
   position: fixed;
@@ -186,6 +185,7 @@ input {
 }
 .form .form-wrapper .form-inner .main {
   background-color: var(--white-color);
+  transition: 0.4s ease;
   border-radius: 10px;
   width: 380px;
   padding: 40px 40px 30px;
@@ -210,9 +210,12 @@ input {
   outline: none;
   padding: 10px 0 10px 12px;
   caret-color: var(--gray-color);
+  transition: 0.4s ease;
   width: 88%;
   background-color: var(--white-color);
+  transition: 0.4s ease;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 .form .form-wrapper .form-inner .main .email-pw .message {
   position: absolute;
@@ -220,6 +223,7 @@ input {
   transform: translateY(-50%);
   right: 10px;
   color: var(--gray-color);
+  transition: 0.4s ease;
   cursor: pointer;
 }
 .form-wrapper .form-inner .main .remember-foget {
@@ -233,10 +237,12 @@ input {
   gap: 6px;
   font-size: 12px;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 .form-wrapper .form-inner .main .remember-foget .forget {
   font-size: 12px;
   color: var(--black-color);
+  transition: 0.4s ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,6 +266,7 @@ input {
   padding: 20px 0;
   font-size: 13px;
   color: var(--black-color);
+  transition: 0.4s ease;
   text-align: center;
 }
 .form-wrapper .form-inner .main .list-social {
@@ -285,7 +292,9 @@ input {
 }
 .form-wrapper .form-inner .main .list-social .item:nth-child(3) {
   background-color: var(--black-color);
+  transition: 0.4s ease;
   color: var(--white-color);
+  transition: 0.4s ease;
   border-radius: 888px;
   width: 42px;
   height: 42px;
@@ -300,6 +309,7 @@ input {
   position: relative;
   line-height: 32px;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 .form-wrapper .form-inner .main .register a {
   color: #007aff;
@@ -352,6 +362,7 @@ header .bar {
   padding: 5px 124.5px;
   height: 100%;
   background-color: var(--white-color);
+  transition: 0.4s ease;
 }
 .header-item:first-child {
   display: flex;
@@ -392,6 +403,7 @@ header .bar {
 .header-nav li:nth-child(2) a,
 .header-nav li:nth-child(3) a {
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 .header-nav li::before {
   content: '';
@@ -430,10 +442,12 @@ header .bar {
 .login-btn {
   cursor: pointer;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 .login-icon {
   color: #ccc;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 .login-icon i {
   width: 20px;
@@ -460,15 +474,18 @@ header .bar {
   display: flex;
   justify-content: space-between;
   background-color: var(--white-color);
+  transition: 0.4s ease;
 }
 #nav .nav-wrapper .icon {
   width: 17px;
   height: 17px;
   margin: 0 10px;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 #nav .nav-wrapper .icon a {
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 #nav .nav-wrapper .icon:nth-child(2) {
   display: none;
@@ -503,6 +520,7 @@ header .bar {
 }
 #nav .nav-wrapper > ul > li > a {
   color: var(--black-color);
+  transition: 0.4s ease;
   font-size: 15px;
   white-space: nowrap;
   font-weight: 700;
@@ -521,11 +539,13 @@ header .bar {
   z-index: 999;
   border-top: 1px solid #add2e1;
   background-color: var(--white-color);
+  transition: 0.4s ease;
   box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
   animation: fadeUp 0.4s ease;
 }
 #nav .nav-wrapper ul li .subnav li {
   color: var(--black-color);
+  transition: 0.4s ease;
   font-size: 14px;
   font-weight: 700;
   padding: 10px 10px 10px 15px;
@@ -534,6 +554,7 @@ header .bar {
 }
 #nav .nav-wrapper ul li .subnav li:hover {
   color: var(--white-color);
+  transition: 0.4s ease;
   background-color: #2d67ad;
 }
 /* content */
@@ -542,6 +563,7 @@ header .bar {
   padding: 30px 0 0;
   margin-top: 46px;
   background-color: var(--white-color);
+  transition: 0.4s ease;
 }
 .content-header {
   display: grid;
@@ -620,6 +642,7 @@ header .bar {
 }
 .header-news .item .item-disc {
   color: var(--black-color);
+  transition: 0.4s ease;
   font-size: 15px;
   line-height: 21px;
   /* max-width: 135.8px; */
@@ -633,6 +656,9 @@ header .bar {
 .header-main {
   padding: 0px 20px;
   border-left: 1px solid #ccc;
+}
+.header-main.border-right {
+  border-right: 1px solid #ccc;
 }
 .header-main .main-img {
   width: 100%;
@@ -651,6 +677,7 @@ header .bar {
   font-size: 22px;
   line-height: 28px;
   color: var(--black-color);
+  transition: 0.4s ease;
   cursor: pointer;
 }
 .header-main .main-heading:hover {
@@ -658,6 +685,7 @@ header .bar {
 }
 .header-main .main-disc {
   color: var(--black-color);
+  transition: 0.4s ease;
   font-size: 14px;
   line-height: 21px;
   margin: 0 0 20px 0;
@@ -674,7 +702,8 @@ header .bar {
   overflow: hidden;
 }
 .header-main .main-news .item .item-disc {
-  color: #555;
+  color: var(--black-color);
+  transition: 0.4s ease;
   font-size: 15px;
   line-height: 21px;
   margin-top: 10px;
@@ -704,7 +733,7 @@ header .bar {
   cursor: pointer;
 }
 .content-body1 {
-  background: hsla(0, 0%, 96%, 0.839);
+  background: var(--gray-color);
   display: flex;
   padding: 25px 20px 20px;
   gap: 25px;
@@ -719,7 +748,7 @@ header .bar {
   margin-bottom: 10px;
 }
 .content-body1 .item-disc {
-  color: #2a2a2a;
+  color: var(--black-color);
   font-size: 15px;
   line-height: 21px;
 }
@@ -786,6 +815,7 @@ header .bar {
   font-size: 13px;
   line-height: 13px;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 .content-header2 .header-main .item .item-head ul li:hover {
   color: #2d67ad;
@@ -804,6 +834,7 @@ header .bar {
   font-size: 15px;
   line-height: 21px;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 .content-header2 .header-main .item .title li:hover {
   color: #007aff;
@@ -857,6 +888,7 @@ header .bar {
   text-align: center;
   font-weight: 800;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 .content-header.grid-3 .header-tech .tech-list {
   display: grid;
@@ -950,7 +982,8 @@ header .bar {
   gap: 40px;
   grid-template-columns: 2.4fr 1fr;
   padding: 20px;
-  background-color: var(--white-color);
+  background-color: var(--gray-color);
+  transition: 0.4s ease;
 }
 .content-video .inner .item:first-child video {
   width: 100%;
@@ -959,6 +992,7 @@ header .bar {
 }
 .content-video .inner .item:first-child .heading {
   color: var(--black-color);
+  transition: 0.4s ease;
   font-size: 20px;
   line-height: 32px;
   margin: 12px 0 0;
@@ -1005,9 +1039,11 @@ header .bar {
   max-width: 130px;
   margin: -5px 0 0;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 .read-comment {
-  background-color: var(--white-color);
+  background-color: var(--gray-color);
+  transition: 0.4s ease;
 }
 .read-comment .inner {
   padding: 20px 20px 10px;
@@ -1030,6 +1066,7 @@ header .bar {
   padding: 10px;
   cursor: pointer;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 .read-comment .inner .tabs .tab-item.active {
   color: #2d67ad;
@@ -1065,12 +1102,15 @@ header .bar {
 .read-comment .inner .content .item .number {
   font-size: 35px;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 .read-comment .inner .content .item .title {
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 footer {
   background-color: var(--gray-color);
+  transition: 0.4s ease;
   padding: 0 125px;
   margin: -20px 0 0;
 }
@@ -1088,6 +1128,7 @@ footer .head ul {
 }
 footer .head p {
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 
 footer .head ul li {
@@ -1120,6 +1161,7 @@ footer .body .body-list .item .img {
 }
 footer .body .body-list .item .text {
   color: var(--black-color);
+  transition: 0.4s ease;
   margin-bottom: 20px;
 }
 
@@ -1130,6 +1172,7 @@ footer .body .body-list .item .text p {
 footer .body .social p {
   font-size: 13px;
   color: var(--black-color);
+  transition: 0.4s ease;
 }
 footer .body .social .list-icon {
   display: flex;
@@ -1140,8 +1183,10 @@ footer .body .social .list-icon .icon {
   width: 27px;
   height: 27px;
   background-color: var(--black-color);
+  transition: 0.4s ease;
   border-radius: 888px;
   color: var(--white-color);
+  transition: 0.4s ease;
   display: flex;
   justify-content: center;
   align-items: center;

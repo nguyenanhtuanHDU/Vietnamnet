@@ -23,6 +23,8 @@ const searchClose = document.querySelector(
   '.search .search-inner .search-head .search-close'
 )
 const headerBar = document.querySelector('header .bar')
+const toggleLightDark = document.querySelector('.toggle')
+const root = document.querySelector(':root')
 
 // handle toggle form
 const toggelEle = (ele, type) => {
@@ -124,23 +126,7 @@ navRightBtn.addEventListener('click', function () {
   }
   navList.scroll(space, 0)
 })
-// navList.addEventListener('wheel', function (e) {
-//   this.scrollLeft += e.deltaY
-//   if (this.scrollLeft === this.scrollWidth - this.offsetWidth) {
-//     this.classList.remove('fa-circle-chevron-right')
-//     this.classList.add('fa-circle-chevron-left')
-//   } else {
-//     this.classList.add('fa-circle-chevron-right')
-//     this.classList.remove('fa-circle-chevron-left')
-//   }
-//   if (this.scrollLeft <= 50) {
-//     this.classList.add('fa-circle-chevron-right')
-//     this.classList.remove('fa-circle-chevron-left')
-//   } else {
-//     this.classList.remove('fa-circle-chevron-right')
-//     this.classList.add('fa-circle-chevron-left')
-//   }
-// })
+
 const body = document.querySelector('body')
 const toggle = document.querySelector('#toggle')
 const sunIcon = document.querySelector('.toggle .bxs-sun')
@@ -152,4 +138,19 @@ toggle.addEventListener('change', () => {
     sunIcon.className == 'bx bxs-sun' ? 'bx bx-sun' : 'bx bxs-sun'
   moonIcon.className =
     moonIcon.className == 'bx bxs-moon' ? 'bx bx-moon' : 'bx bxs-moon'
+})
+
+let countLight = 0
+toggleLightDark.addEventListener('click', function (e) {
+  countLight += 1
+  if (countLight === 1) {
+    root.style.setProperty('--white-color', 'black')
+    root.style.setProperty('--black-color', 'white')
+    root.style.setProperty('--gray-color', 'black')
+  } else if (countLight === 2) {
+    root.style.setProperty('--white-color', 'white')
+    root.style.setProperty('--black-color', 'black')
+    root.style.setProperty('--gray-color', '#f3f3f3')
+    countLight = 0
+  }
 })
