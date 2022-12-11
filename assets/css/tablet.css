@@ -4,7 +4,11 @@
     --video-number: 3;
     --video-gap: 20px;
     --video-gap-number: 2;
+    --white-color: black;
+    --black-color: white;
+    --gray-color: black;
   }
+
   .search.active {
     display: block;
     animation: fadeRight 0.4s ease;
@@ -19,11 +23,20 @@
     background-color: rgba(0, 0, 0, 0.25);
     display: none;
   }
+
+  .search .search-inner::-webkit-scrollbar {
+    width: 5px;
+  }
+  .search .search-inner::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #2d67ad;
+  }
   .search .search-inner {
     position: relative;
     width: 60%;
     height: 100%;
-    background-color: white;
+    background-color: var(--white-color);
+    overflow-y: auto;
   }
   .search .search-inner .search-head {
     position: relative;
@@ -44,13 +57,13 @@
   }
   .search .search-inner footer {
     padding: 0 36px;
-    background-color: white;
+    background-color: var(--white-color);
   }
   .search .search-inner footer .head {
     grid-template-columns: repeat(2, 1fr);
     border-bottom: none;
     padding: 0;
-    gap: 15px;
+    gap: 27px 34px;
   }
   .search .search-inner footer .body {
     padding: 0;
@@ -91,8 +104,10 @@
     width: 100%;
     border-radius: 888px;
     padding: 5px 20px;
-    border: 1px solid #2a2a2a;
+    border: 1px solid var(--black-color);
     outline: none;
+    background-color: var(--white-color);
+    margin: 0 0 19px;
   }
   .form .form-wrapper {
     position: relative;
@@ -114,6 +129,7 @@
   header .bar {
     display: block;
     font-size: 28px;
+    color: var(--black-color);
   }
   #header {
     padding: 0 15px;
@@ -428,7 +444,7 @@
   }
   footer {
     padding: 1.25rem;
-    margin: 20px 0 0;
+    margin: 0;
   }
   footer .head {
     grid-template-columns: repeat(4, 1fr);
