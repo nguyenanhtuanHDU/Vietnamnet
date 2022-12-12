@@ -128,6 +128,7 @@ navRightBtn.addEventListener('click', function () {
 })
 
 const body = document.querySelector('body')
+const light = document.querySelector('.light')
 const toggle = document.querySelector('#toggle')
 const sunIcon = document.querySelector('.toggle .bxs-sun')
 const moonIcon = document.querySelector('.toggle .bx-moon')
@@ -153,4 +154,18 @@ toggleLightDark.addEventListener('click', function (e) {
     root.style.setProperty('--gray-color', '#f3f3f3')
     countLight = 0
   }
+})
+
+const hideLight = () => {
+  setTimeout(() => {
+    light.classList.add('is-hide')
+  }, 3000)
+}
+hideLight()
+
+light.addEventListener('mouseenter', function () {
+  light.classList.remove('is-hide')
+})
+light.addEventListener('mouseleave', function () {
+  hideLight()
 })

@@ -431,13 +431,18 @@
   .content-header2 .header-main .item .header-news .item:after {
     display: none;
   }
+  .content-header2 .header-main .item .stock .stock-item .item .name {
+    font-size: 16px;
+    font-weight: 700;
+  }
   .content-header2 .header-main .item .stock {
     margin: 25px 10px;
   }
   .content-header2 .header-main .item .stock .stock-item {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto 30% 30% 30%;
+    grid-template-areas: 'h1 h2 h3 h4';
   }
   .content-header2 .header-main .item .stock .stock-item .item {
     margin: 0 0 0;

@@ -4,9 +4,9 @@
     --video-number: 3;
     --video-gap: 20px;
     --video-gap-number: 2;
-    --white-color: black;
-    --black-color: white;
-    --gray-color: black;
+    --white-color: white;
+    --black-color: black;
+    --gray-color: #f3f3f3;
   }
 
   .search.active {
